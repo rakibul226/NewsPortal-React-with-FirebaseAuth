@@ -20,6 +20,7 @@ const Registration = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+        console.log("Registration successful");
       })
       .catch((error) => {
         console.log(error);
