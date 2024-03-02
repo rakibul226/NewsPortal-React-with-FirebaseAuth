@@ -6,6 +6,10 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
+import qzone1 from "../../../../assets/qZone1.png";
+import qzone2 from "../../../../assets/qZone2.png";
+import qzone3 from "../../../../assets/qZone3.png";
+
 const RightSideNav = () => {
   return (
     <div>
@@ -40,6 +44,13 @@ const RightSideNav = () => {
           <FaInstagram />
           Instagram
         </a>
+      </div>
+
+      <div className="p-4 space-y-3">
+        <h2 className="text-3xl">Q Zone</h2>
+        <img src={qzone1} alt="" />
+        <img src={qzone2} alt="" />
+        <img src={qzone3} alt="" />
       </div>
     </div>
   );
