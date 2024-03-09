@@ -12,8 +12,8 @@ import qzone3 from "../../../../assets/qZone3.png";
 
 const RightSideNav = () => {
   return (
-    <div>
-      <div className="p-4 space-y-3">
+    <div className="sticky top-10 h-screen  overflow-y-auto">
+      <div className="p-4 space-y-3 ">
         <h2 className="text-3xl">Login with</h2>
         <button className="btn btn-outline w-full">
           <FaGoogle />
@@ -48,6 +48,9 @@ const RightSideNav = () => {
 
       <div className="p-4 space-y-3">
         <h2 className="text-3xl">Q Zone</h2>
+        <img src={qzone1} alt="" />
+        <img src={qzone2} alt="" />
+        <img src={qzone3} alt="" />
         <img src={qzone1} alt="" />
         <img src={qzone2} alt="" />
         <img src={qzone3} alt="" />

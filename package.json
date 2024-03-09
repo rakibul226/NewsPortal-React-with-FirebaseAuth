@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
     "firebase": "^10.8.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
@@ -34,5 +35,9 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.0"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
 }

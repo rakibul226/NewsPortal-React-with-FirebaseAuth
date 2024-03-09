@@ -13,17 +13,19 @@ const LeftSideNav = () => {
   }, []);
 
   return (
-    <div className="space-y-5">
-      All Categories: {categories.length}
-      {categories.map((category) => (
-        <Link
-          to={`/category/${category.id}`}
-          className="block ml-6 text-xl font-semibold"
-          key={category.id}
-        >
-          {category.name}
-        </Link>
-      ))}
+    <div className="sticky top-20">
+      <span className="font-extrabold">All Categories</span>
+      <div className="space-y-5">
+        {categories.map((category) => (
+          <Link
+            to={`/category/${category.id}`}
+            className="block ml-6 text-xl font-semibold"
+            key={category.id}
+          >
+            {category.name}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
