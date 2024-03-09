@@ -19,7 +19,7 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         console.log(result.user);
-        console.log("Loged In Successfully");
+        console.log("Logged In Successfully");
 
         //navigate after login
         navigate(location?.state ? location.state : "/");
