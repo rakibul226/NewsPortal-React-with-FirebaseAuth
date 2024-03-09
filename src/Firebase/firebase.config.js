@@ -1,12 +1,14 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAN3aDXrVccY5jz9aq5-JlWi2iS3LSX5so",
-  authDomain: "module-52--newsportal-react.firebaseapp.com",
-  projectId: "module-52--newsportal-react",
-  storageBucket: "module-52--newsportal-react.appspot.com",
-  messagingSenderId: "42209218632",
-  appId: "1:42209218632:web:0cc73f8e86f853a180887d",
+  //imported from .env file
+
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 const app = initializeApp(firebaseConfig);

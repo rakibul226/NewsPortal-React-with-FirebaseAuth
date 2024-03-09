@@ -36,13 +36,10 @@ const AuthProvider = ({ children }) => {
   //set user
   useEffect(() => {
     onAuthStateChanged(auth, (currentUser) => {
-      console.log("user state changed");
       setUser(currentUser);
       setLoading(false);
     });
-    return () => {
-      console.log("signed out");
-    };
+    return () => {};
   }, []);
 
   const authInfo = {
