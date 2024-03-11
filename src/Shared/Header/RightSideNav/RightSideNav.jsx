@@ -12,7 +12,7 @@ import qzone3 from "../../../../assets/qZone3.png";
 
 const RightSideNav = () => {
   return (
-    <div className="sticky top-10 h-screen  overflow-y-auto">
+    <div className="sticky top-10 h-screen  overflow-y-auto ">
       <div className="p-4 space-y-3 ">
         <h2 className="text-3xl">Login with</h2>
         <button className="btn btn-outline w-full">

@@ -11,7 +11,7 @@ const Home = () => {
   const news = useLoaderData();
 
   return (
-    <div>
+    <div className="">
       <Header></Header>
       <BreakingNews></BreakingNews>
       <Navbar></Navbar>
